@@ -37,6 +37,11 @@ var urlParams = (function()
         }
     }
     
+    if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1')
+    {
+        result['dev'] = '1';
+    }
+    
     return result;
 })();
 

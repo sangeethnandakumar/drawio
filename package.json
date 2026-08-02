@@ -1,0 +1,11 @@
+{
+  "name": "drawio-vite",
+  "version": "1.0.0",
+  "description": "Vite developer environment for draw.io",
+  "scripts": {
+    "dev": "vite"
+  },
+  "devDependencies": {
+    "vite": "^5.0.0"
+  }
+}
