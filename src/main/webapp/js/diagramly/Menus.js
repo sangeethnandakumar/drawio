@@ -1042,6 +1042,13 @@
 
 		action.visible = Editor.enableNativeClipboard && editorUi.editor.isExportToCanvas();
 
+		action = editorUi.actions.addAction('instantImage', mxUtils.bind(this, function()
+		{
+			editorUi.copyImage(null);
+		}));
+
+		action.visible = Editor.enableNativeClipboard && editorUi.editor.isExportToCanvas();
+
 		action = editorUi.actions.addAction('copyAsSvg', mxUtils.bind(this, function()
 		{
 			var cells = mxUtils.sortCells(graph.model.getTopmostCells(graph.getSelectionCells()));

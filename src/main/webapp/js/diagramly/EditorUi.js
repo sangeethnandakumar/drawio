@@ -19648,7 +19648,7 @@
 					this.editor.graph.background == mxConstants.NONE,
 					null, null, null, 10, null, null,
 					(Editor.isDarkMode()) ? 'dark' : 'light', null,
-					(cells.length > 0) ? cells : null);
+					(cells != null && cells.length > 0) ? cells : null);
 			}
 		}
 		catch (e)

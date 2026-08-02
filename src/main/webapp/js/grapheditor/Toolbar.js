@@ -71,6 +71,7 @@ Toolbar.prototype.init = function()
 		[Editor.freehandImage, Editor.sparklesImage], minWidth - 120);
 	var layoutMenu = this.addMenu(this.editorUi.menus.get('layout'), null, Editor.layoutImage);
 	layoutMenu.setAttribute('data-min-width', minWidth - 120);
+	this.addItems(['instantImage'], null, null, [Editor.instantImage], minWidth - 120);
 
 	this.editorUi.dependsOnLanguage(mxUtils.bind(this, function()
 	{
