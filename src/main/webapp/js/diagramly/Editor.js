@@ -8651,7 +8651,7 @@
 	/**
 	 * Specifies if the page should be visible for new files. Default is true.
 	 */
-	Graph.prototype.defaultPageVisible = urlParams['pv'] != '0';
+	Graph.prototype.defaultPageVisible = urlParams['pv'] == '1';
 
 	/**
 	 * Copy on connect is enabled by default in the sketch theme. Use the

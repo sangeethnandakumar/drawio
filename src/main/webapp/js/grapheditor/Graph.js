@@ -6086,7 +6086,7 @@ Graph.prototype.defaultScrollbars = true;
 /**
  * Specifies if the page should be visible for new files. Default is true.
  */
-Graph.prototype.defaultPageVisible = true;
+Graph.prototype.defaultPageVisible = false;
 
 /**
  * Specifies if the page should be visible for new files. Default is true.
@@ -17042,16 +17042,13 @@ if (typeof mxVertexHandler !== 'undefined')
 			return marker;
 		};
 
-		/**
-		 * 
-		 */
-		Graph.prototype.defaultVertexStyle = {};
+		Graph.prototype.defaultVertexStyle = {'strokeWidth': '2'};
 
 		/**
 		 * Contains the default style for edges.
 		 */
-		Graph.prototype.defaultEdgeStyle = {'edgeStyle': 'orthogonalEdgeStyle', 'rounded': '0',
-			'jettySize': 'auto', 'orthogonalLoop': '1'};
+		Graph.prototype.defaultEdgeStyle = {'edgeStyle': 'orthogonalEdgeStyle', 'rounded': '1',
+			'jettySize': 'auto', 'orthogonalLoop': '1', 'strokeWidth': '2'};
 
 		/**
 		 * Returns the current edge style as a string.
